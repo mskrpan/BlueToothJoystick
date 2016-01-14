@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/bNap"
+        android:background="@drawable/btnap"
+        android:layout_above="@+id/bOkretL"
+        android:layout_toRightOf="@+id/bOkretL"
+        android:layout_toEndOf="@+id/bOkretL" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btnaz"
+        android:id="@+id/bNaz"
+        android:layout_below="@+id/bOkretL"
+        android:layout_toRightOf="@+id/bOkretL"
+        android:layout_toEndOf="@+id/bOkretL"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btrotdes"
+        android:id="@+id/bOkretD"
+        android:layout_alignTop="@+id/bStop"
+        android:layout_toRightOf="@+id/bStop"
+        android:layout_toEndOf="@+id/bStop" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btrotlij"
+        android:id="@+id/bOkretL"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvL"
+        android:layout_toEndOf="@+id/tvL"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btstop"
+        android:id="@+id/bStop"
+        android:layout_alignTop="@+id/bOkretL"
+        android:layout_toRightOf="@+id/bOkretL"
+        android:layout_toEndOf="@+id/bOkretL"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="l"
+        android:id="@+id/tvL"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="f"
+        android:id="@+id/tvF"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="b"
+        android:id="@+id/tvB"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="s"
+        android:id="@+id/tvS"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="r"
+        android:id="@+id/tvR"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="some text"
+        android:id="@+id/tvLabel"
+        android:layout_alignTop="@+id/tvLab"
+        android:layout_toRightOf="@+id/tvLab"
+        android:layout_toEndOf="@+id/tvLab" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        android:id="@+id/tvLab"
+        android:layout_alignTop="@+id/bNap"
+        android:layout_alignLeft="@+id/bConnect"
+        android:layout_alignStart="@+id/bConnect" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/bConnect"
+        android:layout_alignTop="@+id/bDisconnect"
+        android:layout_toLeftOf="@+id/bDisconnect"
+        android:layout_toStartOf="@+id/bDisconnect" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/bDisconnect"
+        android:layout_alignTop="@+id/bOkretD"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutoPilot"
+        android:id="@+id/bAuto"
+        android:layout_below="@+id/bNaz"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="a"
+        android:id="@+id/tvAuto"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="X"
+        android:id="@+id/tvX"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Y"
+        android:id="@+id/tvY"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvX"
+        android:layout_toEndOf="@+id/tvX"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Z"
+        android:id="@+id/tvZ"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvY"
+        android:layout_toEndOf="@+id/tvY"
+        android:padding="5dp"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbLazy"
+        android:layout_above="@+id/bAuto"
+        android:layout_toRightOf="@+id/tvLab"
+        android:layout_toEndOf="@+id/tvLab"
+        android:onClick="onToggle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Samo za lijene:"
+        android:id="@+id/tvLazy"
+        android:padding="5dp"
+        android:layout_above="@+id/tbLazy"
+        android:layout_alignRight="@+id/tbLazy"
+        android:layout_alignEnd="@+id/tbLazy" />
+
+</RelativeLayout>
